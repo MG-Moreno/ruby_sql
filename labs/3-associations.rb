@@ -14,6 +14,11 @@ Activity.destroy_all
 #   activity data in the database.  Afterwards, display a
 #   single salesperson's activity data:
 
+puts "There are #{Activity.all.count} activities"
+
+me = Salesperson.find_by({"first_name" => "Ben", "last_name" => "Block"})
+tim = contact.find_by({"first_name" => "Tim", "last_name" => "Cook"})
+
 # 1. insert 3 rows in the activities table with relationships to
 # a single salesperson and 2 different contacts
 
